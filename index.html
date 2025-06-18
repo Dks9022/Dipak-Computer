@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dipak Computer Academy - सेवा आणि ऑनलाइन शिक्षण</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0,0,0,0.4);
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            font-style: italic;
+            color: #f8e112;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: rgba(255,255,255,0.1);
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            border-bottom: 3px solid #f8e112;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: #f8e112;
+            font-size: 2rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            font-size: 1.2rem;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        button.course-btn {
+            background-color: transparent;
+            border: none;
+            color: #f8e112;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0;
+            font-weight: 700;
+            text-align: left;
+            width: 100%;
+        }
+        button.course-btn:hover {
+            text-decoration: underline;
+        }
+        p.course-detail {
+            display: none;
+            margin-left: 20px;
+            margin-top: 6px;
+            font-size: 1.1rem;
+            color: #fff;
+            line-height: 1.4;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        a {
+            color: #f8e112;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: rgba(0,0,0,0.3);
+            font-size: 1rem;
+            letter-spacing: 1px;
+            color: #ddd;
+            margin-top: 50px;
+            border-top: 1px solid #f8e112;
+        }
+        footer em {
+            display: block;
+            margin-top: 8px;
+            font-style: normal;
+            color: #f8e112;
+            font-weight: 600;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            header p {
+                font-size: 1.2rem;
+            }
+            main {
+                margin: 20px 15px;
+                padding: 20px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dipak Computer Academy</h1>
+        <p>संगणक शिका जगासोबत रहा</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>आमच्या सेवा</h2>
+            <ul>
+                <li>संगणक हार्डवेअर दुरुस्ती आणि देखभाल</li>
+                <li>सॉफ्टवेअर इंस्टॉलेशन आणि अपडेट</li>
+                <li>नेटवर्क सेटअप आणि देखरेख</li>
+                <li>व्हायरस क्लिनिंग आणि संरक्षण</li>
+                <li>डेटा बॅकअप आणि पुनर्प्राप्ती सेवा</li>
+                <li>नवीन संगणक सेटअप सल्ला आणि सहाय्य</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ऑनलाइन कोर्सेस</h2>
+            <ul>
+                <li>
+                    <button class="course-btn" onclick="toggleDetails('course1')">
+                        कंप्यूटर हार्डवेअर बेसिक्स आणि मेंटेनन्स
+                    </button>
+                    <p id="course1" class="course-detail">
+                        हार्डवेअरची मूलभूत माहिती, मेंटेनन्स टिप्स, समस्या निवारण.
+                    </p>
+                </li>
+                <li>
+                    <button class="course-btn" onclick="toggleDetails('course2')">
+                        सॉफ्टवेअर इंस्टॉलेशन आणि मेंटेनन्स
+                    </button>
+                    <p id="course2" class="course-detail">
+                        सॉफ्टवेअर इन्स्टॉलेशन प्रक्रिया, अपडेट्स, व समस्यांचे निराकरण.
+                    </p>
+                </li>
+                <li>
+                    <button class="course-btn" onclick="toggleDetails('course3')">
+                        नेटवर्किंग फंडामेंटल्स आणि सुरक्षा
+                    </button>
+                    <p id="course3" class="course-detail">
+                        नेटवर्क कसे तयार करायचे, सुरक्षेचे उपाय आणि ट्रबलशूटिंग.
+                    </p>
+                </li>
+                <li>
+                    <button class="course-btn" onclick="toggleDetails('course4')">
+                        व्हायरस प्रोटेक्शन आणि सेफ्टी टिप्स
+                    </button>
+                    <p id="course4" class="course-detail">
+                        व्हायरसपासून संगणक सुरक्षित ठेवण्यासाठी उपाय आणि टिप्स.
+                    </p>
+                </li>
+                <li>
+                    <button class="course-btn" onclick="toggleDetails('course5')">
+                        डिजिटल डेटा बॅकअप आणि रिकव्हरी तंत्रे
+                    </button>
+                    <p id="course5" class="course-detail">
+                        डेटा बॅकअप कसा करावा आणि तो कसा पुनर्प्राप्त करावा हे शिकवा.
+                    </p>
+                </li>
+                <li>
+                    <button class="course-btn" onclick="toggleDetails('course6')">
+                        मायक्रोसॉफ्ट ऑफिस (Word, Excel, PowerPoint)
+                    </button>
+                    <p id="course6" class="course-detail">
+                        मायक्रोसॉफ्ट ऑफिसच्या मुख्य अॅप्लिकेशन्सचे प्रभावी वापर.
+                    </p>
+                </li>
+            </ul>
+            <p>आमचे कोर्सेस ऑनलाईन उपलब्ध आहेत. अधिक माहितीसाठी कृपया खाली दिलेल्या संपर्कावर संपर्क करा.</p>
+        </section>
+
+        <section>
+            <h2>संपर्क माहिती</h2>
+            <p><strong>पत्ता:</strong> मनोली, ता. वैजपूर, जिल्हा संभाजीनगर</p>
+            <p><strong>फोन:</strong> <a href="tel:+919226747818">+91 92267 47818</a></p>
+            <p><strong>ईमेल:</strong> <a href="mailto:dipakcomputer@example.com">dipakcomputer@example.com</a></p>
+            <p><strong>वेबसाइट:</strong> <a href="https://www.dipakcomputer.com" target="_blank">www.dipakcomputer.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Dipak Computer Academy. सर्व हक्क राखीव.
+        <em>संगणक शिका जगासोबत रहा</em>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            const detail = document.getElementById(id);
+            if (detail.style.display === "block") {
+                detail.style.display = "none";
+            } else {
+                detail.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
