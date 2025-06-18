@@ -29,6 +29,21 @@
             font-style: italic;
             color: #f8e112;
         }
+        nav {
+            background-color: rgba(0,0,0,0.3);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #f8e112;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         main {
             max-width: 900px;
             margin: 40px auto;
@@ -46,36 +61,6 @@
             margin-bottom: 20px;
             color: #f8e112;
             font-size: 2rem;
-        }
-        ul {
-            list-style: none;
-            padding-left: 0;
-            font-size: 1.2rem;
-        }
-        li {
-            margin-bottom: 15px;
-        }
-        button.course-btn {
-            background-color: transparent;
-            border: none;
-            color: #f8e112;
-            font-size: 1.2rem;
-            cursor: pointer;
-            padding: 0;
-            font-weight: 700;
-            text-align: left;
-            width: 100%;
-        }
-        button.course-btn:hover {
-            text-decoration: underline;
-        }
-        p.course-detail {
-            display: none;
-            margin-left: 20px;
-            margin-top: 6px;
-            font-size: 1.1rem;
-            color: #fff;
-            line-height: 1.4;
         }
         p {
             font-size: 1.1rem;
@@ -113,6 +98,10 @@
             header p {
                 font-size: 1.2rem;
             }
+            nav a {
+                display: block;
+                margin: 8px 0;
+            }
             main {
                 margin: 20px 15px;
                 padding: 20px;
@@ -129,6 +118,12 @@
         <p>संगणक शिका जगासोबत रहा</p>
     </header>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="course.html">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <main>
         <section>
             <h2>आमच्या सेवा</h2>
@@ -144,60 +139,10 @@
 
         <section>
             <h2>ऑनलाइन कोर्सेस</h2>
-            <ul>
-                <li>
-                    <button class="course-btn" onclick="toggleDetails('course1')">
-                        कंप्यूटर हार्डवेअर बेसिक्स आणि मेंटेनन्स
-                    </button>
-                    <p id="course1" class="course-detail">
-                        हार्डवेअरची मूलभूत माहिती, मेंटेनन्स टिप्स, समस्या निवारण.
-                    </p>
-                </li>
-                <li>
-                    <button class="course-btn" onclick="toggleDetails('course2')">
-                        सॉफ्टवेअर इंस्टॉलेशन आणि मेंटेनन्स
-                    </button>
-                    <p id="course2" class="course-detail">
-                        सॉफ्टवेअर इन्स्टॉलेशन प्रक्रिया, अपडेट्स, व समस्यांचे निराकरण.
-                    </p>
-                </li>
-                <li>
-                    <button class="course-btn" onclick="toggleDetails('course3')">
-                        नेटवर्किंग फंडामेंटल्स आणि सुरक्षा
-                    </button>
-                    <p id="course3" class="course-detail">
-                        नेटवर्क कसे तयार करायचे, सुरक्षेचे उपाय आणि ट्रबलशूटिंग.
-                    </p>
-                </li>
-                <li>
-                    <button class="course-btn" onclick="toggleDetails('course4')">
-                        व्हायरस प्रोटेक्शन आणि सेफ्टी टिप्स
-                    </button>
-                    <p id="course4" class="course-detail">
-                        व्हायरसपासून संगणक सुरक्षित ठेवण्यासाठी उपाय आणि टिप्स.
-                    </p>
-                </li>
-                <li>
-                    <button class="course-btn" onclick="toggleDetails('course5')">
-                        डिजिटल डेटा बॅकअप आणि रिकव्हरी तंत्रे
-                    </button>
-                    <p id="course5" class="course-detail">
-                        डेटा बॅकअप कसा करावा आणि तो कसा पुनर्प्राप्त करावा हे शिकवा.
-                    </p>
-                </li>
-                <li>
-                    <button class="course-btn" onclick="toggleDetails('course6')">
-                        मायक्रोसॉफ्ट ऑफिस (Word, Excel, PowerPoint)
-                    </button>
-                    <p id="course6" class="course-detail">
-                        मायक्रोसॉफ्ट ऑफिसच्या मुख्य अॅप्लिकेशन्सचे प्रभावी वापर.
-                    </p>
-                </li>
-            </ul>
-            <p>आमचे कोर्सेस ऑनलाईन उपलब्ध आहेत. अधिक माहितीसाठी कृपया खाली दिलेल्या संपर्कावर संपर्क करा.</p>
+            <p>आमचे संपूर्ण कोर्सेस पाहण्यासाठी <a href="course.html">इथे क्लिक करा</a>.</p>
         </section>
 
-        <section>
+        <section id="contact">
             <h2>संपर्क माहिती</h2>
             <p><strong>पत्ता:</strong> मनोली, ता. वैजपूर, जिल्हा संभाजीनगर</p>
             <p><strong>फोन:</strong> <a href="tel:+919226747818">+91 92267 47818</a></p>
@@ -210,16 +155,5 @@
         &copy; 2025 Dipak Computer Academy. सर्व हक्क राखीव.
         <em>संगणक शिका जगासोबत रहा</em>
     </footer>
-
-    <script>
-        function toggleDetails(id) {
-            const detail = document.getElementById(id);
-            if (detail.style.display === "block") {
-                detail.style.display = "none";
-            } else {
-                detail.style.display = "block";
-            }
-        }
-    </script>
 </body>
 </html>
