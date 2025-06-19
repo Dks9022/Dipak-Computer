@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="mr">
 <head>
-  <meta charset="UTF-8">
-  <title>Dipak Computer Academy - Course Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dipak Computer Academy - Courses</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f9;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #f1f7ff;
       margin: 0;
       padding: 0;
+      color: #222;
     }
     header {
-      background-color: #4a148c;
+      background-color: #0b5394;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 20px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
     main {
-      max-width: 1000px;
-      margin: 30px auto;
+      max-width: 960px;
+      margin: 40px auto;
       padding: 20px;
     }
-    h2 {
-      color: #4a148c;
-    }
-    .course-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    .course {
+      background: #ffffff;
+      border-left: 6px solid #0b5394;
+      padding: 20px;
       margin-bottom: 30px;
-      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
-    .course-card img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 8px;
-      margin-bottom: 10px;
+    .course h2 {
+      color: #0b5394;
+      margin-top: 0;
+    }
+    .course p {
+      line-height: 1.6;
     }
     .btn {
       display: inline-block;
       background-color: #f8e112;
       color: #000;
-      font-weight: bold;
-      padding: 10px 20px;
-      border-radius: 6px;
+      padding: 10px 18px;
       text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
       margin-top: 10px;
     }
     .btn:hover {
-      background-color: #ffe500;
+      background-color: #ffe600;
     }
     iframe {
-      margin-top: 15px;
-      border-radius: 10px;
+      margin-top: 12px;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      border: none;
+      border-radius: 6px;
     }
     footer {
+      background-color: #e0e0e0;
       text-align: center;
       padding: 15px;
-      background: #eee;
-      margin-top: 40px;
-      color: #555;
+      font-size: 0.95rem;
+      margin-top: 50px;
+      color: #333;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Dipak Computer Academy</h1>
-    <p>ऑनलाइन कोर्सेस</p>
+    <p>ऑनलाइन कोर्स माहिती</p>
   </header>
 
   <main>
 
-    <!-- Basic Computer Course -->
-    <div class="course-card">
-      <h2>Basic Computer Course</h2>
-      <img src="images/basic-computer.jpg" alt="Basic Computer">
-      <p>हा कोर्स संगणकाच्या मूलभूत संकल्पना शिकवतो – MS Word, Typing, File Handling, Internet वापर.</p>
-      <p><strong>कोर्स फी:</strong> ₹499 (Paid Course)</p>
-      <a href="https://wa.me/919226747818?text=Hi%2C%20I%20want%20to%20join%20Basic%20Computer%20Course" class="btn" target="_blank">Join Paid Course</a>
+    <div class="course">
+      <h2>1. Basic Computer Course (Paid)</h2>
+      <p>हा कोर्स संगणक वापरण्याची मूलभूत माहिती देतो – MS Word, Typing, File Handling, इंटरनेट वापर.</p>
+      <p><strong>फी:</strong> ₹499</p>
+      <a class="btn" href="https://wa.me/919226747818?text=Hi%2C%20I%20want%20to%20join%20Basic%20Computer%20Course" target="_blank">
+        Join Paid Course
+      </a>
     </div>
 
-    <!-- Free MS Word Demo Course -->
-    <div class="course-card">
-      <h2>MS Word Demo (Free)</h2>
-      <img src="images/word-demo.jpg" alt="MS Word Demo">
-      <p>MS Word मध्ये टायपिंग, फॉरमॅटिंग, सॅम्पल डॉक्युमेंट तयार करणे.</p>
-      <iframe width="100%" height="215" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="MS Word Demo" frameborder="0" allowfullscreen></iframe>
+    <div class="course">
+      <h2>2. MS Word Demo (Free)</h2>
+      <p>MS Word मध्ये टायपिंग, फॉरमॅटिंग, सॅम्पल डॉक्युमेंट तयार करणे या गोष्टींचा अभ्यास.</p>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="MS Word Demo"></iframe>
     </div>
+
+    <!-- पुढील कोर्सेस इथे टाकता येतील -->
 
   </main>
 
   <footer>
-    &copy; 2025 Dipak Computer Academy. All rights reserved.
+    &copy; 2025 Dipak Computer Academy. Developed for online learning.
   </footer>
-
 </body>
 </html>
