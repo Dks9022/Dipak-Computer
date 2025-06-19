@@ -94,7 +94,8 @@
       e.preventDefault();
       const data = Object.fromEntries(new FormData(form).entries());
 
-      fetch("https://script.google.com/macros/s/AKfycbzoZLBfCfSEoOi4UvCDQcggwFxKJmZk330hfqWEzOJ-6Ocpc6Q6aIHdmcuYdpwn_z0foQ/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbxXFyCJnSSbSAbdptU_9CXlCGrD8qRHTw5zQ-SG74xEtntfYTxpPbwFnGzn_ayPDPGm6g/exec", {
+
         method: 'POST',
         body: JSON.stringify(data),
         headers: {
