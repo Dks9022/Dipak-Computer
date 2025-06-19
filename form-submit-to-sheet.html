@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paid Course Registration</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; padding: 30px; }
+    .container { background: white; padding: 30px; max-width: 500px; margin: auto; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    input, select, textarea { width: 100%; padding: 12px; margin: 10px 0; border-radius: 4px; border: 1px solid #ccc; }
+    button { background-color: #28a745; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #218838; }
+    .success { color: green; font-weight: bold; text-align: center; display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Paid Course Registration</h2>
+    <form id="registrationForm">
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+      <label>Mobile Number:</label>
+      <input type="tel" name="mobile" required>
+      <label>Email:</label>
+      <input type="email" name="email" required>
+      <label>Course Name:</label>
+      <select name="course" required>
+        <option value="">Select Course</option>
+        <option>Basic Computer</option>
+        <option>Tally + GST</option>
+        <option>Typing</option>
+        <option>MS-CIT</option>
+      </select>
+      <label>Message:</label>
+      <textarea name="message" rows="3"></textarea>
+      <button type="submit">Submit</button>
+      <p class="success" id="successMessage">✅ नोंदणी यशस्वी झाली!</p>
+    </form>
+  </div>
+  <script>
+    const form = document.getElementById('registrationForm');
+    const successMsg = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      fetch("https://script.google.com/macros/s/AKfycbx6GYZzYIodTZB7n-og6L7juE-GKIiv_DDv9E2zLMKaqwjzE5C81GBEDTE5N4HYq4KkOw/exec", {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(result => {
+        if (result.result === 'success') {
+          successMsg.style.display = 'block';
+          form.reset();
+        } else {
+          alert("⚠️ फॉर्म सबमिट झाला नाही. कृपया पुन्हा प्रयत्न करा.");
+        }
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        alert("⚠️ काहीतरी चुकलं. पुन्हा प्रयत्न करा.");
+      });
+    });
+  </script>
+</body>
+</html>
