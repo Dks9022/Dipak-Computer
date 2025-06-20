@@ -67,25 +67,30 @@
   </form>
 
   <script>
-    document.getElementById("submit-form").addEventListener("submit", async function(e) {
-      e.preventDefault();
+  document.getElementById("submit-form").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-      const name = e.target.name.value;
-      const mobile = e.target.mobile.value;
-      const email = e.target.email.value;
-      const course = e.target.course.value;
-      const message = e.target.message.value;
+    const form = e.target;
+    const name = form.name.value.trim();
+    const mobile = form.mobile.value.trim();
+    const email = form.email.value.trim();
+    const course = form.course.value;
+    const message = form.message.value.trim();
 
-      let photoName = document.getElementById("photo").files[0]?.name || "Not Uploaded";
-      let signName = document.getElementById("signature").files[0]?.name || "Not Uploaded";
+    // ✅ Mobile number validation
+    const mobilePattern = /^[6-9]\d{9}$/;
+    if (!mobilePattern.test(mobile)) {
+      alert("कृपया वैध 10-अंकी मोबाईल नंबर टाका (6, 7, 8, 9 ने सुरु होणारा)");
+      return;
+    }
 
-      const whatsappText =
-        `👤 नाव: ${name}%0A📞 मोबाईल: ${mobile}%0A📧 ईमेल: ${email}%0A📘 कोर्स: ${course}%0A📝 मेसेज: ${message}%0A📷 फोटो: ${photoName}%0A✍️ सही: ${signName}`;
+    const photoName = document.getElementById("photo").files[0]?.name || "Not Uploaded";
+    const signName = document.getElementById("signature").files[0]?.name || "Not Uploaded";
 
-      const waURL = `https://wa.me/919226747818?text=${whatsappText}`;
-      window.location.href = waURL;
-    });
-  </script>
+    const whatsappText =
+      `👤 नाव: ${name}%0A📞 मोबाईल: ${mobile}%0A📧 ईमेल: ${email}%0A📘 कोर्स: ${course}%0A📝 मेसेज: ${message}%0A📷 फोटो: ${photoName}%0A✍️ सही: ${signName}`;
 
-</body>
-</html>
+    const waURL = `https://wa.me/919226747818?text=${whatsappText}`;
+    window.location.href = waURL;
+  });
+</script>
