@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Paid Course Registration via WhatsApp</title>
+  <style>
+    body { font-family: sans-serif; background: #f2f2f2; padding: 30px; }
+    form {
+      background: white;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    h2 { text-align: center; color: #333; }
+  </style>
+</head>
+<body>
+
+  <h2>Paid Course Registration</h2>
+
+  <form id="submit-form">
+    <input type="text" name="name" placeholder="पूर्ण नाव" required />
+    <input type="text" name="mobile" placeholder="मोबाईल नंबर" required />
+    <input type="email" name="email" placeholder="ईमेल आयडी" required />
+    <select name="course" required>
+      <option value="">कोर्स निवडा</option>
+      <option value="Basic Computer">Basic Computer</option>
+      <option value="MS-CIT">MS-CIT</option>
+      <option value="Typing">Typing</option>
+    </select>
+    <textarea name="message" placeholder="अधिक माहिती (optional)"></textarea>
+    <button type="submit">Join via WhatsApp</button>
+  </form>
+
+  <script>
+    document.getElementById("submit-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value;
+      const mobile = form.mobile.value;
+      const email = form.email.value;
+      const course = form.course.value;
+      const message = form.message.value;
+
+      const text = `👤 नाव: ${name}%0A📞 मोबाईल: ${mobile}%0A📧 ईमेल: ${email}%0A📘 कोर्स: ${course}%0A📝 मेसेज: ${message}`;
+      const whatsappURL = `https://wa.me/919226747818?text=${text}`;
+
+      window.location.href = whatsappURL;
+    });
+  </script>
+
+</body>
+</html>
