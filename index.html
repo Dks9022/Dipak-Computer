@@ -2,21 +2,23 @@
 <html lang="mr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dipak Computer Academy</title>
   <meta name="description" content="Dipak Computer Academy - संगणक कोर्सेस, हार्डवेअर प्रशिक्षण, डिजिटल सेवा">
   <meta name="keywords" content="computer course, Dipak Computer, hardware, ms-office, vaijapur, aurangabad, digital literacy">
   <meta name="author" content="Dipak Sir">
   <meta name="robots" content="index, follow">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f6f7;
+      background: linear-gradient(to bottom right, #f5f7fa, #c3cfe2);
       color: #2c3e50;
     }
     header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background: linear-gradient(to right, #1f4037, #99f2c8);
       color: white;
       padding: 60px 20px;
       text-align: center;
@@ -26,19 +28,20 @@
       margin-bottom: 10px;
     }
     header p {
-      font-size: 1.3rem;
-      color: #f1c40f;
+      font-size: 1.4rem;
+      color: #ffe600;
     }
     nav {
       text-align: center;
       background: #34495e;
-      padding: 10px;
+      padding: 12px;
     }
     nav a {
       text-decoration: none;
       color: white;
       margin: 0 15px;
       font-weight: bold;
+      font-size: 1rem;
     }
     nav a:hover {
       color: #f1c40f;
@@ -50,22 +53,28 @@
     }
     section {
       margin-bottom: 50px;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     h2 {
-      color: #2c3e50;
+      color: #1f618d;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
       border-left: 5px solid #2980b9;
       padding-left: 10px;
-      font-size: 2rem;
     }
     ul li {
       line-height: 1.8;
       font-size: 1.1rem;
     }
     .highlight {
-      background: #ecf0f1;
+      background: #f1f8ff;
       padding: 15px;
-      border-left: 4px solid #3498db;
+      border-left: 5px solid #3498db;
       margin: 20px 0;
+      border-radius: 5px;
     }
     .btn {
       display: inline-block;
@@ -74,6 +83,7 @@
       padding: 10px 20px;
       border-radius: 5px;
       text-decoration: none;
+      font-weight: bold;
       transition: background 0.3s;
     }
     .btn:hover {
@@ -91,33 +101,33 @@
 <body>
   <header>
     <h1>Dipak Computer Academy</h1>
-    <p>संगणक शिका - यशस्वी भविष्यासाठी!</p>
+    <p>तुमच्या यशाचा पाया - संगणक शिक्षणासह!</p>
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#whyus">Why Us</a>
-    <a href="#courses">Courses</a>
-    <a href="#motivation">Motivation</a>
-    <a href="#admission">Admission</a>
-    <a href="#contact">Contact</a>
+    <a href="#about">आमच्याबद्दल</a>
+    <a href="#whyus">का निवडावे?</a>
+    <a href="#courses">कोर्सेस</a>
+    <a href="#motivation">प्रेरणा</a>
+    <a href="#admission">प्रवेश</a>
+    <a href="#contact">संपर्क</a>
   </nav>
 
   <main>
     <section id="about">
       <h2>आमच्याबद्दल</h2>
-      <p>Dipak Computer Academy ही वैजापूर येथील एक अग्रगण्य संगणक प्रशिक्षण संस्था आहे. आम्ही ग्रामीण भागातील विद्यार्थ्यांसाठी संगणक शिक्षण सुलभ आणि प्रभावी करण्याचे काम करत आहोत. आमचे अनुभवसंपन्न मार्गदर्शक, अद्ययावत अभ्यासक्रम आणि सातत्यपूर्ण प्रॅक्टिकल मार्गदर्शन यामुळे विद्यार्थी नोकरीसाठी सक्षम होतात.</p>
+      <p>Dipak Computer Academy ही वैजापूर येथील एक अग्रगण्य संगणक प्रशिक्षण संस्था आहे. आमचा उद्देश म्हणजे विद्यार्थ्यांना डिजिटल क्षेत्रात करिअर घडवण्यासाठी योग्य मार्गदर्शन देणे. आम्ही विविध कोर्सेसच्या माध्यमातून संगणक साक्षरता वाढवण्याचे कार्य करत आहोत.</p>
     </section>
 
     <section id="whyus">
       <h2>आम्हालाच का निवडावे?</h2>
       <div class="highlight">
         <ul>
-          <li>सरळ आणि समजण्यास सोपा अभ्यासक्रम</li>
-          <li>प्रत्येक विद्यार्थ्यास वैयक्तिक मार्गदर्शन</li>
-          <li>Live Practical सत्र व Assignments</li>
-          <li>100% Placement Assistance</li>
-          <li>Affordable Fees आणि Installment सुविधा</li>
+          <li>प्रत्येक विद्यार्थ्याला वैयक्तिक लक्ष</li>
+          <li>100% प्रॅक्टिकल शिक्षण</li>
+          <li>कमी फी आणि हप्ता सुविधा</li>
+          <li>सरकारी व खाजगी क्षेत्रात जॉब मार्गदर्शन</li>
+          <li>नवीन अभ्यासक्रम, आधुनिक तंत्रज्ञान</li>
         </ul>
       </div>
     </section>
@@ -125,31 +135,31 @@
     <section id="courses">
       <h2>कोर्सेस</h2>
       <ul>
-        <li>Basic Computer Course (Windows, MS Office)</li>
-        <li>Advance Excel, Tally with GST</li>
-        <li>Hardware & Networking Fundamentals</li>
-        <li>DTP: Photoshop, CorelDraw, Marathi Typing</li>
-        <li>MS-CIT Equivalent Digital Literacy</li>
+        <li>बेसिक संगणक कोर्स (MS Office, Windows)</li>
+        <li>अॅडव्हान्स एक्सेल आणि टॅली जीएसटी</li>
+        <li>हार्डवेअर व नेटवर्किंग तंत्रज्ञान</li>
+        <li>डेस्कटॉप पब्लिशिंग (Photoshop, CorelDraw)</li>
+        <li>एमएस-सीआयटी समकक्ष डिजिटल लिटरसी कोर्स</li>
       </ul>
-      <p><a href="course.html" class="btn">संपूर्ण कोर्स यादी पाहा</a></p>
+      <p><a href="course.html" class="btn">संपूर्ण कोर्स पाहा</a></p>
     </section>
 
     <section id="motivation">
-      <h2>विद्यार्थ्यांसाठी प्रेरणा</h2>
+      <h2>प्रेरणादायी संदेश</h2>
       <div class="highlight">
-        <p>तुमच्याकडे संगणक ज्ञान असेल, तर जग तुमचं आहे! गावाकडील सामान्य मुलगा देखील आज संगणक शिकून सरकारी कार्यालयात, बँकेत किंवा स्वतःचा व्यवसाय चालवतो आहे. फक्त एक निर्णय घ्या — आणि आजपासून नवी सुरुवात करा.</p>
-        <p><strong>आजच निर्णय घ्या - उद्याचा यशस्वी तुमचा आहे!</strong></p>
+        <p>आजच्या युगात संगणक ज्ञान ही गरजच नाही तर संधी आहे. आपल्याकडे संगणक कौशल्य असेल तर तुम्ही सरकारी नोकरी, खाजगी संस्था किंवा स्वतःचा व्यवसाय सुरू करू शकता.</p>
+        <p><strong>आजच सुरुवात करा — तुमच्या यशाचा प्रवास इथून सुरू होतो!</strong></p>
       </div>
     </section>
 
     <section id="admission">
       <h2>प्रवेश प्रक्रिया</h2>
-      <p>प्रवेश घेण्यासाठी खालील बटनावर क्लिक करा. आमचा प्रतिनिधी तुमच्याशी संपर्क साधेल:</p>
+      <p>ऑनलाइन प्रवेश घेण्यासाठी खाली दिलेल्या बटनावर क्लिक करा:</p>
       <a href="form-submit-to-whatsapp.html" class="btn">Join Paid Course</a>
     </section>
 
     <section id="contact">
-      <h2>संपर्क</h2>
+      <h2>संपर्क करा</h2>
       <p>पत्ता: मनोली, ता. वैजापूर, जि. संभाजीनगर</p>
       <p>फोन: <a href="tel:+919226747818">+91 92267 47818</a></p>
       <p>ईमेल: <a href="mailto:dipakcomputer@example.com">dipakcomputer@example.com</a></p>
