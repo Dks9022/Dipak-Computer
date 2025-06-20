@@ -2,179 +2,82 @@
 <html lang="mr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dipak Computer Academy</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-image: url("images/bg-photo.png");
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
     }
-
     header {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px 20px;
+      background: rgba(0,0,0,0.6);
+      padding: 40px;
       text-align: center;
     }
-
     header h1 {
       margin: 0;
       font-size: 3rem;
-      color: #f8e112;
-      text-shadow: 2px 2px 4px #000;
+      letter-spacing: 1px;
     }
-
     header p {
-      font-size: 1.3rem;
-      font-style: italic;
+      font-size: 1.5rem;
       margin-top: 10px;
+      color: #f1c40f;
     }
-
     nav {
-      background-color: rgba(0,0,0,0.7);
-      padding: 15px;
+      text-align: center;
+      margin: 30px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: #2980b9;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    nav a:hover {
+      background: #1abc9c;
+    }
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
       text-align: center;
     }
-
-    nav a {
-      margin: 0 20px;
-      color: #f8e112;
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background-color: rgba(0,0,0,0.6);
-      padding: 30px;
-      border-radius: 12px;
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      color: #f8e112;
-      border-bottom: 2px solid #f8e112;
-      padding-bottom: 6px;
-      font-size: 2rem;
-    }
-
-    p, li {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-
-    a {
-      color: #f8e112;
-    }
-
-    .profile-pic {
-      width: 180px;
-      border-radius: 12px;
-      margin: 15px 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-
     footer {
       text-align: center;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.5);
-      font-size: 1rem;
+      background: rgba(0,0,0,0.5);
+      margin-top: 40px;
       color: #ccc;
-      border-top: 1px solid #f8e112;
-    }
-
-    footer em {
-      display: block;
-      margin-top: 5px;
-      font-style: normal;
-      color: #f8e112;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-      .profile-pic {
-        width: 140px;
-      }
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Dipak Computer Academy</h1>
-    <p>संगणक शिका, जगासोबत रहा</p>
+    <p>संगणक शिका - यशस्वी भविष्यासाठी!</p>
   </header>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="course.html">Courses</a>
-    <a href="#contact">Contact</a>
+    <a href="course.html">कोर्सेस</a>
+    <a href="form-submit-to-whatsapp.html">Paid Course Registration</a>
+    <a href="mailto:dipakcomputer@example.com">संपर्क करा</a>
   </nav>
 
   <main>
-
-    <section>
-      <h2>Dipak Sir</h2>
-      <img src="images/photo.jpg" alt="Dipak Sir" class="profile-pic">
-      <p>Dipak Sir हे संगणक शिक्षण व सेवा क्षेत्रात अनुभवी प्रशिक्षक आहेत. त्यांनी ग्रामीण विद्यार्थ्यांसाठी सहज समजेल अशा पद्धतीने कोर्सेस विकसित केले आहेत.</p>
-    </section>
-
-    <section>
-      <h2>आमच्या सेवा</h2>
-      <ul>
-        <li>संगणक हार्डवेअर दुरुस्ती आणि देखभाल</li>
-        <li>सॉफ्टवेअर इंस्टॉलेशन आणि अपडेट</li>
-        <li>नेटवर्क सेटअप आणि देखरेख</li>
-        <li>व्हायरस क्लिनिंग आणि संरक्षण</li>
-        <li>डेटा बॅकअप आणि पुनर्प्राप्ती सेवा</li>
-        <li>नवीन संगणक सेटअप सल्ला आणि सहाय्य</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>ऑनलाइन कोर्सेस</h2>
-      <p>आमचे संपूर्ण कोर्सेस पाहण्यासाठी <a href="course.html">इथे क्लिक करा</a>.</p>
-    </section>
-
-    <section id="contact">
-      <h2>संपर्क माहिती</h2>
-      <p><strong>पत्ता:</strong> मनोली, ता. वैजपूर, जिल्हा संभाजीनगर</p>
-      <p><strong>फोन:</strong> <a href="tel:+919226747818">+91 92267 47818</a></p>
-      <p><strong>ईमेल:</strong> <a href="mailto:dipaksuryawanshi205@gmail.com">dipaksuryawanshi205@gmail.com</a></p>
-      <p><strong>वेबसाइट:</strong> <a href="https://www.dipakcomputer.com" target="_blank">www.dipakcomputer.com</a></p>
-    </section>
-
+    <h2>Welcome to Dipak Computer Academy</h2>
+    <p>आम्ही संगणक शिक्षण, टेक्निकल सेवा, आणि डिजिटल मार्गदर्शन पुरवतो.</p>
+    <p>आजच आमच्या कोर्सेसमध्ये नाव नोंदवा!</p>
   </main>
 
   <footer>
     &copy; 2025 Dipak Computer Academy. सर्व हक्क राखीव.
-    <em>संगणक शिका, जगासोबत रहा</em>
   </footer>
-
 </body>
 </html>
