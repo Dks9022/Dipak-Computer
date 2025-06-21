@@ -46,23 +46,25 @@
     }
     .btn {
       display: inline-block;
-      margin-top: 30px;
-      background: #27ae60;
+      margin-top: 20px;
+      background: #2980b9;
       color: white;
-      padding: 12px 25px;
+      padding: 10px 22px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
+      border: none;
+      cursor: pointer;
     }
     .btn:hover {
-      background: #219150;
+      background: #27ae60;
     }
     .note {
       color: #e74c3c;
       margin-top: 15px;
     }
     .success-box {
-      margin-top: 40px;
+      margin-top: 30px;
       background-color: #dff0d8;
       border-left: 5px solid #3c763d;
       padding: 20px;
@@ -71,6 +73,7 @@
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
+      display: none;
     }
   </style>
 </head>
@@ -89,12 +92,20 @@
     </div>
   </div>
 
-  <p class="note">पेमेंट केल्यानंतर स्क्रीनशॉट जतन करा.</p>
+  <p class="note">पेमेंट केल्यानंतर "मी पेमेंट केलंय" या बटणावर क्लिक करा.</p>
 
-  <div class="success-box">
+  <button onclick="showSuccess()" class="btn">मी पेमेंट केलंय</button>
+
+  <div id="successBox" class="success-box">
     <h3>✅ पेमेंट यशस्वी झाला आहे!</h3>
     <p>आता रजिस्ट्रेशन फॉर्म भरण्यासाठी खालील बटणावर क्लिक करा.</p>
     <a href="form-submit-to-whatsapp.html" class="btn">रजिस्ट्रेशन फॉर्म भरा</a>
   </div>
+
+  <script>
+    function showSuccess() {
+      document.getElementById('successBox').style.display = 'block';
+    }
+  </script>
 </body>
 </html>
